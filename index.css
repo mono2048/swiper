@@ -1,0 +1,62 @@
+.container {
+  width: 200px;
+  height: 150px;
+  position: relative;
+  overflow-x: hidden;
+  left: 50%;
+  top: 180px;
+  transform: translateX(-50%);
+}
+.slides {
+  position: absolute;
+  left: 0px;
+  background-color: pink;
+  height: 150px;
+  display: flex; /* 强制slide一行排列 */
+}
+.slides .slide {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: red;
+}
+.step {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.step a {
+  color: #333;
+  text-decoration: none;
+}
+.dots {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 22px;
+  width: 100px;
+  background-color: #ccc;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.dots .active {
+  background-color: red !important;
+}
